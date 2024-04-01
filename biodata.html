@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #85739a;
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 10px 10px 10px rgba(255, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        select,
+        input[type="radio"] {
+            padding: 8px;
+            border-radius: 5px;
+            border: px solid #c43d3d;
+            margin-bottom: 10px;
+            width: calc(100% - 130px);
+        }
+        input[type="radio"] {
+            width: auto;
+            margin: 0 9px 0 0;
+        }
+        input[type="submit"] {
+            background-color: #000000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #f50000;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Biodata Pribadi</h1>
+        <label for="nama">Nama :</label>
+        <input type="text" id="nama" name="nama">
+        <br>
+        <label for="alamat">Alamat :</label>
+        <input type="text" id="alamat" name="alamat">
+        <br>
+        <label for="tanggal_lahir">Tanggal Lahir :</label>
+        <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+        <br>
+        <label for="jenis_kelamin">Jenis kelamin :</label>
+        <label><input type="radio" name="jenis_kelamin" value="laki-laki"> Laki-laki</label>
+        <label><input type="radio" name="jenis_kelamin" value="perempuan"> Perempuan</label>
+        <br>
+        <label for="agama">Agama :</label>
+        <select id="agama" name="agama">
+            <option value="islam">Islam</option>
+            <option value="kristen">Kristen</option>
+            <option value="hindu">Hindu</option>
+            <option value="budha">Budha</option>
+            <option value="Atheis">Atheis</option>
+        </select>
+        <br>
+        <br>
+        
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
