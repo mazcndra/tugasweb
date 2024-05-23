@@ -1,0 +1,58 @@
+<html>
+<head>
+   <title>Contoh Tabel dan Form HTML</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Tabel Mahasiswa</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>No.</th>
+      <th>Nama</th>
+      <th>NIM</th>
+      <th>Jurusan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Maulana candra</td>
+      <td>1123102109</td>
+      <td>Teknik Informatika</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Alya Maulidana</td>
+      <td>1123102110</td>
+      <td>Sistem Informasi</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Form Mahasiswa</h2>
+
+<form>
+  <label for="nama">Nama:</label><br>
+  <input type="text" id="nama" name="nama"><br>
+  <label for="nim">NIM:</label><br>
+  <input type="text" id="nim" name="nim"><br><br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>

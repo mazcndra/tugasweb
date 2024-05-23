@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #383434;
+    font-style: oblique;
+}
+.form-container {
+    background: rgb(255, 254, 254);
+    padding: 10px;
+    border-radius: 10px;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+td {
+    padding: 5px;
+}
+label {
+    margin-right: 10px;
+}
+input {
+    background-color: rgb(84, 137, 187);
+}
