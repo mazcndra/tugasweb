@@ -1,0 +1,106 @@
+// Variables
+$font-family: Arial, sans-serif;
+$background-color: #f9f9f9;
+$border-color: #ccc;
+$input-focus-color: #66afe9;
+$submit-bg-color: #4CAF50;
+$submit-hover-color: #45a049;
+$reset-bg-color: #f44336;
+$reset-hover-color: #e53935;
+
+// General styling
+body {
+    font-family: $font-family;
+    background-color: $background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+// Table styling
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    vertical-align: top;
+
+    &:first-child {
+        text-align: right;
+        font-weight: bold;
+    }
+
+    &:nth-child(2) {
+        text-align: center;
+    }
+}
+
+// Input styling
+input[type="email"],
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+
+    &:focus {
+        border-color: $input-focus-color;
+        outline: none;
+    }
+}
+
+// Radio and checkbox styling
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+label {
+    margin-right: 15px;
+}
+
+// Button styling
+input[type="submit"],
+input[type="reset"] {
+    background-color: $submit-bg-color;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: $submit-hover-color;
+    }
+
+    &:reset {
+        background-color: $reset-bg-color;
+
+        &:hover {
+            background-color: $reset-hover-color;
+        }
+    }
+}
