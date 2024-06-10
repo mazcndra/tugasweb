@@ -1,0 +1,9 @@
+.transform-image {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.transform-image:hover {
+    transform: rotate(45deg);
+}
